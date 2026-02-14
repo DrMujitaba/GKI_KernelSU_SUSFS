@@ -764,6 +764,7 @@ jobs:
             kmi_61="-android14-11-g${GHASH}-${BID}"
             sed -i "\$s|echo \"\$res\"|echo \"$kmi_61\"|" ./scripts/setlocalversion 2>/dev/null || true
             kmi_66="-g${GHASH}-${BID}-4k"
+            sed -i "\$s|echo \"\$res\"|echo \"$kmi_66\"|" ./scripts/setlocalversion 2>/dev/null || true
             sed -i "/^CONFIG_LOCALVERSION=/ s/=\"[^\"]*\"/=\"${kmi_66}\"/" ./arch/arm64/configs/gki_defconfig 2>/dev/null || true
           fi
 
