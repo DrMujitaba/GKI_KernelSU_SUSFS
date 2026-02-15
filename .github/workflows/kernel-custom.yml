@@ -1,4 +1,4 @@
-name: 内核构建 - 自定义版本
+name: 内核构建 - 6.6.124-A17-MuJi-Test-260215
 
 permissions:
   contents: write
